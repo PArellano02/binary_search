@@ -146,9 +146,9 @@ def argmin(f, lo, hi, epsilon=1e-3):
     >>> argmin(lambda x: (x-5)**2, -20, 0)
     -0.00016935087808430278
     '''
-    distance = (abs(hi-lo)) / 3
+    distance = (abs(hi - lo)) / 3
     m1 = lo + distance
-    m2 = lo + 2*distance
+    m2 = lo + 2 * distance
     if hi - lo < epsilon:
         return (hi + lo) / 2
     elif f(m1) < f(m2):
